@@ -200,7 +200,7 @@ class FeatureStatistics():
 
     @classmethod
     def load(cls, filename, sae):
-        data = torch.load(filename)
+        data = torch.load(filename, weights_only=False)
         stats = cls(sae)
         stats.n_features = data['n_features']
         stats.highly_activating_indices = defaultdict(list, data['highly_activating_indices'])
