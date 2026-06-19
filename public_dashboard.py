@@ -129,7 +129,7 @@ def create_radial_tree_plot(feature_idx, stats, interpreter, model_id="gpt2-smal
     fig = go.Figure(data=edge_traces + [node_trace],
                     layout=go.Layout(
                         title=f'Feature {feature_idx} Relationship Graph',
-                        titlefont=dict(size=16),
+                        title_font=dict(size=16),
                         showlegend=False,
                         hovermode='closest',
                         margin=dict(b=20, l=5, r=5, t=40),
